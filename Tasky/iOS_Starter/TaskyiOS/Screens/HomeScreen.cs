@@ -67,7 +67,7 @@ namespace Tasky.Screens {
 		{
 			tasks = TaskManager.GetTasks().ToList ();
 			var rows = from t in tasks
-				select (Element)new StringElement ((t.Name == "" ? "<new task>" : t.Name), t.Notes);
+				select (Element)new CheckboxElement ((t.Name == "" ? "<new task>" : t.Name), t.Done);
 			var s = new Section ();
 			s.AddAll(rows);
 			Root = new RootElement("Tasky") {s}; 

@@ -14,6 +14,7 @@ namespace Tasky.ApplicationLayer {
 		{
 			Name = task.Name;
 			Notes = task.Notes;
+			Done = task.Done;
 		}
 		
 		[Entry("task name")]
@@ -21,6 +22,9 @@ namespace Tasky.ApplicationLayer {
 
 		[Entry("other task info")]
 		public string Notes { get; set; }
+
+		[Entry("Done")]
+		public bool Done { get; set; }
 		
 		[Section ("")]
 		[OnTap ("SaveTask")]
