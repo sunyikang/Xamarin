@@ -45,6 +45,10 @@
     <Compile Include="DataLayer\SQLite.cs" />
     <Compile Include="DataLayer\TaskDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessLayer\Managers\UserLoginManager.cs" />
+    <Compile Include="DataAccessLayer\UserRepository.cs" />
+    <Compile Include="DataLayer\UserDatabase.cs" />
+    <Compile Include="BusinessLayer\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BusinessLayer\About.txt" />
