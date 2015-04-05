@@ -1,17 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Foundation;
 using UIKit;
 
 namespace Tasky {
 	[Register ("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate {
+	public partial class AppDelegate : UIApplicationDelegate
+	{
 		// class-level declarations
 		UIWindow window;
 		UINavigationController navController;
-		UITableViewController homeViewController;
-		
+		UITableViewController homeScreen;
+		UITableViewController loginScreen;
+
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
 			// create a new window instance based on the screen size
@@ -24,7 +23,8 @@ namespace Tasky {
 			navController = new UINavigationController ();
 
 			// create our home controller 
-			homeViewController = new Tasky.Screens.controller_iPhone();
+			homeScreen = new Tasky.Screens.HomeScreen();
+			loginScreen = new Tasky.Screens.LoginScreen();
 
 			// Styling
 			UINavigationBar.Appearance.TintColor = UIColor.FromRGB (38, 117 ,255); // nice blue
@@ -36,7 +36,9 @@ namespace Tasky {
 			
 
 			// push the view controller onto the nav controller and show the window
-			navController.PushViewController(homeViewController, false);
+			navController.PushViewController(homeScreen, false);
+			navController.PushViewController(loginScreen, false);
+
 			window.RootViewController = navController;
 			window.MakeKeyAndVisible ();
 			
