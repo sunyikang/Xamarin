@@ -9,6 +9,9 @@ using Tasky.BL;
 
 namespace Tasky.Screens
 {
+	// Here is a good place to learn View Controller in iOS: https://developer.apple.com/library/ios/featuredarticles/ViewControllerPGforiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007457
+	// Here is a good start for Xamarin shortcuts: http://www.syntaxismyui.com/wp-content/uploads/2014/09/Xamarin-Studio-Keyboard-Shortcuts.pdf
+	// Here is a good intruduction for MonoDialog: http://developer.xamarin.com/guides/ios/user_interface/monotouch.dialog/
 	public class LoginScreen : DialogViewController 
 	{
 		EntryElement account = new EntryElement ("Login", "enter", "s");
