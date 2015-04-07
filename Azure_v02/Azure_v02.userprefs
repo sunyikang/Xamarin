@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Azure_v02/Azure_v02.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.2" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Azure_v02/TodoItem.cs">
     <Files>
       <File FileName="Azure_v02/Azure_v02ViewController.cs" Line="1" Column="1" />
-      <File FileName="Azure_v02/Main.cs" Line="21" Column="1" />
-      <File FileName="Azure_v02/Azure_v02ViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Azure_v02/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="Azure_v02/Entitlements.plist" />
       <File FileName="Azure_v02/Info.plist" />
+      <File FileName="Azure_v02/Main.cs" Line="20" Column="2" />
+      <File FileName="Azure_v02/TodoItem.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

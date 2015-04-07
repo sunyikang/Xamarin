@@ -1,19 +1,24 @@
 ﻿<Properties StartupItem="TaskyiOS/TaskyiOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TaskyiOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TaskyiOS/Screens/LoginScreen.cs">
     <Files>
-      <File FileName="TaskyiOS/Screens/LoginScreen.cs" Line="31" Column="37" />
-      <File FileName="TaskyiOS/Screens/HomeScreen.cs" Line="12" Column="48" />
-      <File FileName="TaskyiOS/AppDelegate.cs" Line="10" Column="25" />
-      <File FileName="TaskyiOS/ApplicationLayer/TaskDialog.cs" Line="37" Column="7" />
-      <File FileName="TaskyiOS/ApplicationLayer/LoginDialog.cs" Line="15" Column="12" />
-      <File FileName="Shared/UserManager.cs" Line="7" Column="33" />
+      <File FileName="TaskyiOS/Screens/LoginScreen.cs" Line="33" Column="42" />
+      <File FileName="TaskyiOS/Screens/HomeScreen.cs" Line="1" Column="1" />
+      <File FileName="TaskyiOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="TaskyiOS/ApplicationLayer/TaskDialog.cs" Line="1" Column="1" />
+      <File FileName="TaskyiOS/ApplicationLayer/LoginDialog.cs" Line="1" Column="1" />
+      <File FileName="Shared/UserManager.cs" Line="1" Column="1" />
       <File FileName="TaskyiOS/ApplicationLayer/LocalizableBindingContext.cs" Line="1" Column="1" />
+      <File FileName="Shared/UserRepository.cs" Line="1" Column="1" />
+      <File FileName="Shared/SQLite.cs" Line="1" Column="1" />
+      <File FileName="Shared/TaskRepository.cs" Line="1" Column="1" />
+      <File FileName="Shared/TaskManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/suny/GitHub/Xamarin/Tasky-2/Shared/TaskDatabase.cs" line="28" column="24" />
+      <Breakpoint file="/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/Screens/HomeScreen.cs" line="50" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
