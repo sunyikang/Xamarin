@@ -1,0 +1,37 @@
+# Version: 8.8.0.2 (ccfcd59)
+# [first argument, ignore] # /Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.8.0.2/bin/mtouch-64 \
+	--cache \
+	/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache \
+	--dev \
+	/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/bin/iPhone/Debug/Tasky.app \
+	--executable \
+	Tasky \
+	--debug \
+	--linksdkonly \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	8.2 \
+	--targetver \
+	8.2 \
+	--abi=armv7 \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/MonoTouch.Dialog-1.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	../Components/xamarin.mobile-0.7.4/lib/ios-unified/Xamarin.Mobile.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/MonoTouch.Dialog-1.dll \
+	-r \
+	../Components/xamarin.mobile-0.7.4/lib/ios-unified/Xamarin.Mobile.dll \
+	/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/bin/iPhone/Debug//Tasky.exe \
