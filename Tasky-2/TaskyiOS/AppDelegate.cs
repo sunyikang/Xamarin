@@ -1,7 +1,8 @@
 using Foundation;
 using UIKit;
 
-namespace Tasky {
+namespace Tasky 
+{
 	[Register ("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{

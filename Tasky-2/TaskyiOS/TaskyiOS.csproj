@@ -83,12 +83,12 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ApplicationLayer\EditingSource.cs" />
-    <Compile Include="ApplicationLayer\TaskDialog.cs" />
-    <Compile Include="ApplicationLayer\LocalizableBindingContext.cs" />
-    <Compile Include="ApplicationLayer\LoginDialog.cs" />
     <Compile Include="Screens\LoginScreen.cs" />
     <Compile Include="Screens\HomeScreen.cs" />
+    <Compile Include="AL\EditingSource.cs" />
+    <Compile Include="AL\TaskDialog.cs" />
+    <Compile Include="AL\LocalizableBindingContext.cs" />
+    <Compile Include="AL\LoginDialog.cs" />
   </ItemGroup>
   <Import Project="..\Shared\Shared.projitems" Label="Shared" Condition="Exists('..\Shared\Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

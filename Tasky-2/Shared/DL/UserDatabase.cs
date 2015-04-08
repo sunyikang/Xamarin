@@ -28,7 +28,8 @@ namespace Tasky.DL
 			CreateTable<User> ();
 		}
 
-		public IEnumerable<T> GetItems<T> () where T : BL.Contracts.IBusinessEntity, new ()
+		//YIKANG NOTE: generic https://msdn.microsoft.com/en-us/library/bb384067.aspx
+		public IEnumerable<T> GetItems<T> () where T : BL.Contracts.IBusinessEntity , new ()
 		{
 			lock (locker) {
 				return (from i in Table<T> () select i).ToList ();
@@ -37,6 +38,7 @@ namespace Tasky.DL
 
 		public T GetItem<T> (int id) where T : BL.Contracts.IBusinessEntity, new ()
 		{
+			// YIKANG NOTE:  lock https://msdn.microsoft.com/en-us/library/c5kehkcz(v=vs.100).aspx
 			lock (locker) {
 				return Table<T>().FirstOrDefault(x => x.ID == id);
 				// Following throws NotSupportedException - thanks aliegeni
@@ -64,13 +66,5 @@ namespace Tasky.DL
 				return Delete<T> (new T () { ID = id });
 			}
 		}
-
-		/*
-		public bool Check<T>(T item) where T : BL.Contracts.IBusinessEntity, new ()
-		{
-			lock (locker) {
-				return 
-		}
-		*/
 	}
 }

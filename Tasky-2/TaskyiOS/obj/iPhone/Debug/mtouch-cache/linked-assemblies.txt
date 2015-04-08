@@ -1,7 +1,0 @@
-/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache/Link/MonoTouch.Dialog-1.dll
-/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
-/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll
-/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache/Link/System.Json.dll
-/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
-/Users/suny/GitHub/Xamarin/Tasky-2/TaskyiOS/obj/iPhone/Debug/mtouch-cache/Link/Tasky.exe
