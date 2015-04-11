@@ -1,3 +1,0 @@
-STUDY
-
- - Here is a good introduction for .gitignore file: http://stackoverflow.com/questions/18119315/what-parts-of-a-xamarin-solution-should-be-kept-out-of-the-repositorys
