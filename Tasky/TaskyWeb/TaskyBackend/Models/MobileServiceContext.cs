@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using Microsoft.WindowsAzure.Mobile.Service;
 using Microsoft.WindowsAzure.Mobile.Service.Tables;
-using TaskyBackend.DataObjects;
+//using TaskyBackend.DataObjects;
 
 namespace TaskyBackend.Models
 {
@@ -28,7 +28,7 @@ namespace TaskyBackend.Models
         {
         }
 
-        public DbSet<TodoItem> TodoItems { get; set; }
+        //public DbSet<TodoItem> TodoItems { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -42,6 +42,10 @@ namespace TaskyBackend.Models
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
+        public System.Data.Entity.DbSet<TaskyBackend.DataObjects.User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<TaskyBackend.DataObjects.Message> Messages { get; set; }
     }
 
 }

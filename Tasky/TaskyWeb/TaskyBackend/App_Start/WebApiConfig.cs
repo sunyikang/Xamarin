@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Entity;
 using System.Web.Http;
-using TaskyBackend.DataObjects;
+//using TaskyBackend.DataObjects;
 using TaskyBackend.Models;
 using Microsoft.WindowsAzure.Mobile.Service;
 
@@ -31,6 +31,7 @@ namespace TaskyBackend
     {
         protected override void Seed(MobileServiceContext context)
         {
+            /*
             List<TodoItem> todoItems = new List<TodoItem>
             {
                 new TodoItem { Id = Guid.NewGuid().ToString(), Text = "First item", Complete = false },
@@ -40,7 +41,7 @@ namespace TaskyBackend
             foreach (TodoItem todoItem in todoItems)
             {
                 context.Set<TodoItem>().Add(todoItem);
-            }
+            }*/
 
             base.Seed(context);
         }
