@@ -19,15 +19,28 @@ namespace TaskyBackend.Controllers
         }
 
         // GET tables/Message
-        public IQueryable<Message> GetAllMessage()
+        public IQueryable<MessageDTO> GetAllMessage()
         {
-            return Query(); 
+            return Query().Select(x => new MessageDTO() 
+            {
+                SenderID = x.Sender.Id,
+                ReceiverID = x.Receiver.Id,
+                Content = x.Content,
+                IsSent = x.IsSent
+            }); 
         }
 
         // GET tables/Message/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public SingleResult<Message> GetMessage(string id)
+        public SingleResult<MessageDTO> GetMessage(string id)
         {
-            return Lookup(id);
+            var result = Lookup(id).Queryable.Select(x => new MessageDTO() {
+                SenderID = x.Sender.Id,
+                ReceiverID = x.Receiver.Id,
+                Content = x.Content,
+                IsSent = x.IsSent
+            });
+
+            return SingleResult<MessageDTO>.Create(result);
         }
 
         // PATCH tables/Message/48D68C86-6EA6-4C25-AA33-223FC9A27959
