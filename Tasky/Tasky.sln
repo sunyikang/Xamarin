@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskyWinPhone", "TaskyWinPh
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "Shared\Shared.shproj", "{D140C41E-62E4-4C7C-AE67-6CF2B136E19C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskyWeb", "TaskyWeb\TaskyWeb.csproj", "{77758E15-2BC1-468D-8C65-E02BADD2DEC0}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Shared\Shared.projitems*{d140c41e-62e4-4c7c-ae67-6cf2b136e19c}*SharedItemsImports = 13
@@ -76,18 +74,6 @@ Global
 		{8FD09DFC-EE0E-448C-8E0A-6FD727332081}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{8FD09DFC-EE0E-448C-8E0A-6FD727332081}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{8FD09DFC-EE0E-448C-8E0A-6FD727332081}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{77758E15-2BC1-468D-8C65-E02BADD2DEC0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
