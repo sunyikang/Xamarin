@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using Microsoft.WindowsAzure.Mobile.Service;
 using Microsoft.WindowsAzure.Mobile.Service.Tables;
-//using TaskyWeb.DataObjects;
+using TaskyWeb.DataObjects;
 
 namespace TaskyWeb.Models
 {
@@ -28,7 +28,7 @@ namespace TaskyWeb.Models
         {
         }
 
-        //public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<TodoItem> TodoItems { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

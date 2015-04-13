@@ -3,12 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskyWeb", "TaskyWeb\TaskyWeb.csproj", "{95DA95B8-A298-4272-9725-3F2FB37A7B4B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{821A9938-DB27-42C0-A873-18EE8CDD348B}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskyWeb", "TaskyWeb\TaskyWeb.csproj", "{BE62783B-181D-4D1F-A7FA-CBD4AE91D4A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{95DA95B8-A298-4272-9725-3F2FB37A7B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95DA95B8-A298-4272-9725-3F2FB37A7B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95DA95B8-A298-4272-9725-3F2FB37A7B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95DA95B8-A298-4272-9725-3F2FB37A7B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE62783B-181D-4D1F-A7FA-CBD4AE91D4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE62783B-181D-4D1F-A7FA-CBD4AE91D4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE62783B-181D-4D1F-A7FA-CBD4AE91D4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE62783B-181D-4D1F-A7FA-CBD4AE91D4A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
