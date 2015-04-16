@@ -9,7 +9,7 @@ namespace Tasky
 		// class-level declarations
 		UIWindow window;
 		UINavigationController navController;
-		UITableViewController homeScreen;
+		//UITableViewController homeScreen;
 		UITableViewController loginScreen;
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
@@ -37,8 +37,9 @@ namespace Tasky
 			
 
 			// push the view controller onto the nav controller and show the window
-			navController.PushViewController(homeScreen, false);
+
 			navController.PushViewController(loginScreen, false);
+			//navController.PushViewController(homeScreen, false);
 
 			window.RootViewController = navController;
 			window.MakeKeyAndVisible ();
