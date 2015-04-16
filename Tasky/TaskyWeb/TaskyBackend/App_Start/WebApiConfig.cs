@@ -6,6 +6,7 @@ using System.Web.Http;
 //using TaskyBackend.DataObjects;
 using TaskyBackend.Models;
 using Microsoft.WindowsAzure.Mobile.Service;
+using Microsoft.WindowsAzure.Mobile.Service.Config;
 
 namespace TaskyBackend
 {
@@ -13,6 +14,9 @@ namespace TaskyBackend
     {
         public static void Register()
         {
+            //Initialize SignalR
+            SignalRExtensionConfig.Initialize();
+
             // Use this class to set configuration options for your mobile service
             ConfigOptions options = new ConfigOptions();
 
