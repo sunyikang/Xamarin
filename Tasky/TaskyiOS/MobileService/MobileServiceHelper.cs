@@ -4,7 +4,7 @@ namespace Tasky
 {
 	public class MobileServiceHelper
 	{
-		static MobileServiceHelper instance = new MobileServiceHelper();
+		static readonly MobileServiceHelper instance = new MobileServiceHelper();
 
 		const string applicationURL = "https://taskybackend.azure-mobile.net/";
 		const string applicationKey = "cFkLIXnUwMmaBXijvAcrYxCzJlmkZW54";

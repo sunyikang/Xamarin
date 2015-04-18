@@ -1,20 +1,22 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace Tasky
 {
 	public class User 
 	{
-		//public int Id { get; set;}
-		public string Name { get; set;}
-		public string Password { get; set;}
+		public string Id { get; set;}
 
-		public int id { get; set;}
+		[JsonProperty(PropertyName = "name")]
+		public string Name { get; set;}
+
+		[JsonProperty(PropertyName = "password")]
+		public string Password { get; set;}
 
 		public User (string name, string password)
 		{
 			this.Name = name;
 			this.Password = password;
-			//this.id = id;
 		}
 	}
 }

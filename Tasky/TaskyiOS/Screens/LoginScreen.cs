@@ -6,6 +6,7 @@ using MonoTouch.Dialog;
 using Foundation;
 using Tasky.AL;
 using Tasky;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace Tasky.Screens
 {
@@ -55,7 +56,14 @@ namespace Tasky.Screens
 
 		public async void Register(string at, string pd){
 			User user = new User (at, pd);
-			await MobileServiceHelper.DefaultService.ServiceClient.GetTable<User>().InsertAsync(user);
+			try{
+				await MobileServiceHelper.DefaultService.ServiceClient.GetTable<User>().InsertAsync(user);
+			}
+			catch(MobileServiceInvalidOperationException e){
+				Console.WriteLine ("This is the bug"+e.Message);
+				throw e;
+			}
+
 		}
 	}
 }
