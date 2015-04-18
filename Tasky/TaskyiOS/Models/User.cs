@@ -1,11 +1,10 @@
 ﻿using System;
-using Tasky.BL.Contracts;
 
 namespace Tasky
 {
 	public class User 
 	{
-		//public int ID { get; set;}
+		//public int Id { get; set;}
 		public string Name { get; set;}
 		public string Password { get; set;}
 
@@ -15,6 +14,7 @@ namespace Tasky
 		{
 			this.Name = name;
 			this.Password = password;
+			//this.id = id;
 		}
 	}
 }
