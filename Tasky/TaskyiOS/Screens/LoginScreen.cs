@@ -30,7 +30,10 @@ namespace Tasky.Screens
 				{
 					account,
 					password,
-					new StringElement ("Login", delegate { Login(); } )
+					new StringElement ("Login", delegate { Login(); } ),
+					new StringElement ("Register", delegate {
+						Register();
+					})
 				},
 			};
 		}
@@ -47,6 +50,10 @@ namespace Tasky.Screens
 				new UIAlertView("Login", "Account or password wrong"
 					, null, "ok", null).Show();
 			}
+		}
+
+		public void Register(){
+			
 		}
 	}
 }
