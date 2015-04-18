@@ -33,7 +33,7 @@ namespace Tasky.Screens
 					password,
 					new StringElement ("Login", delegate { Login(); } ),
 					new StringElement ("Register", delegate {
-						Register(account.ToString(),password.ToString());
+						Register(account.Value,password.Value);
 					})
 				},
 			};
