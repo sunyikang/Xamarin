@@ -5,7 +5,7 @@ using UIKit;
 using MonoTouch.Dialog;
 using Foundation;
 using Tasky.AL;
-using Tasky.BL;
+using Tasky;
 
 namespace Tasky.Screens
 {
@@ -32,7 +32,7 @@ namespace Tasky.Screens
 					password,
 					new StringElement ("Login", delegate { Login(); } ),
 					new StringElement ("Register", delegate {
-						Register();
+						Register(account.ToString(),password.ToString());
 					})
 				},
 			};
@@ -41,6 +41,7 @@ namespace Tasky.Screens
 
 		public void Login ()
 		{
+			/*
 			if (BL.Managers.UserManager.IsValid (account.Value, password.Value)) {
 				this.NavigationController.PopViewController (true);
 			} else {
@@ -49,11 +50,12 @@ namespace Tasky.Screens
 
 				new UIAlertView("Login", "Account or password wrong"
 					, null, "ok", null).Show();
-			}
+			}*/
 		}
 
-		public void Register(){
-			
+		public async void Register(string at, string pd){
+			User user = new User (at, pd);
+			await MobileServiceHelper.DefaultService.ServiceClient.GetTable<User>().InsertAsync(user);
 		}
 	}
 }

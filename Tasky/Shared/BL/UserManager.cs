@@ -8,13 +8,14 @@ namespace Tasky.BL.Managers
 	{
 		static UserManager ()
 		{
-			DAL.UserRepository.Init ();
+			//DAL.UserRepository.Init ();
 		}
 
+		/*
 		public static bool IsValid( string name, string password )
 		{
 			return DAL.UserRepository.IsValid( name, password );
-		}
+		}*/
 	}
 }
 

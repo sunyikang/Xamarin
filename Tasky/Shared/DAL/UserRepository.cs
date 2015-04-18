@@ -64,6 +64,7 @@ namespace Tasky.DAL {
 			}
 		}
 
+		/*
 		public static User GetUser(int id)
 		{
 			return me.db.GetItem<User>(id);
@@ -100,7 +101,7 @@ namespace Tasky.DAL {
 					return true;
 			}
 			return false;
-		}
+		}*/
 	}
 }
 

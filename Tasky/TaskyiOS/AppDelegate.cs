@@ -1,5 +1,6 @@
 using Foundation;
 using UIKit;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace Tasky 
 {
@@ -24,7 +25,7 @@ namespace Tasky
 			navController = new UINavigationController ();
 
 			// create our home controller 
-			homeScreen = new Tasky.Screens.HomeScreen();
+			//homeScreen = new Tasky.Screens.HomeScreen();
 			loginScreen = new Tasky.Screens.LoginScreen();
 
 			// Styling
@@ -46,5 +47,11 @@ namespace Tasky
 			
 			return true;
 		}
+
+		/*
+		public static MobileServiceClient MobileService = new MobileServiceClient(
+			"https://taskybackend.azure-mobile.net/",
+			"cFkLIXnUwMmaBXijvAcrYxCzJlmkZW54"
+		);*/
 	}
 }
