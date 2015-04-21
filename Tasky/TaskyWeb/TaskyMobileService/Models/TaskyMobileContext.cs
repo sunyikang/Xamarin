@@ -41,6 +41,8 @@ namespace TaskyMobileService.Models
         }
 
         public System.Data.Entity.DbSet<TaskyMobileService.DataObjects.User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<TaskyMobileService.DataObjects.Message> Messages { get; set; }
     }
 
 }
