@@ -8,19 +8,19 @@ namespace Tasky
 		
 		public string Id { get; set; }
 
-		[JsonProperty(PropertyName = "SenderID")]
+		[JsonProperty(PropertyName = "senderid")]
 		public string SenderID { get; set; }
 
-		[JsonProperty(PropertyName = "ReceiverID")]
+		[JsonProperty(PropertyName = "receiverid")]
 		public string ReceiverID { get; set; }
 
-		[JsonProperty(PropertyName = "Content")]
+		[JsonProperty(PropertyName = "content")]
 		public string Content { get; set; }
 
-		[JsonProperty(PropertyName = "IsRead")]
+		[JsonProperty(PropertyName = "isread")]
 		public bool IsRead { get; set; }
 
-		[JsonProperty(PropertyName = "Order")]
+		[JsonProperty(PropertyName = "order")]
 		public int Order { get; set; }
 
 		public Message (string senderID, string receiverID, string content, int order)
