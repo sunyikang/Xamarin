@@ -1,4 +1,4 @@
-﻿namespace TaskyMobileService.DataObjects
+﻿namespace TaskyMobileService.DTO
 {
     public class MessageDTO
     {

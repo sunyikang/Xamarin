@@ -6,6 +6,7 @@ using System.Web.Http.OData;
 using Microsoft.WindowsAzure.Mobile.Service;
 using TaskyMobileService.DataObjects;
 using TaskyMobileService.Models;
+using TaskyMobileService.DTO;
 
 namespace TaskyMobileService.Controllers
 {
