@@ -193,10 +193,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DataObjects\User.cs" />
     <Compile Include="Models\TaskyMobileContext.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
