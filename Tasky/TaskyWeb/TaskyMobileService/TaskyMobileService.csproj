@@ -197,7 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="DataObjects\Message.cs" />
     <Compile Include="DataObjects\User.cs" />
     <Compile Include="Models\TaskyMobileContext.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
