@@ -13,7 +13,7 @@ namespace TaskyMobileService.DataObjects
         [InverseProperty("Sender")]
         public virtual ICollection<Message> SentMsgs { get; set; }
 
-        [InverseProperty("Receiver")]
-        public virtual ICollection<Message> ReceivedMsgs { get; set; }
+        //[InverseProperty("Receiver")]
+        //public virtual ICollection<Message> ReceivedMsgs { get; set; }
     }
 }
