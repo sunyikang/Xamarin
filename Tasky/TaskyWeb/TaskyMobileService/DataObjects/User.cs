@@ -10,8 +10,10 @@ namespace TaskyMobileService.DataObjects
 
         public string Password { get; set; }
 
+        [InverseProperty("Sender")]
         public virtual ICollection<Message> SentMsgs { get; set; }
 
+        [InverseProperty("Receiver")]
         public virtual ICollection<Message> ReceivedMsgs { get; set; }
     }
 }
