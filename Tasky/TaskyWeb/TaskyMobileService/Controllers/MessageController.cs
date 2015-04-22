@@ -23,8 +23,8 @@ namespace TaskyMobileService.Controllers
         public IQueryable<MessageDTO> GetAllMessage()
         {
             return Query().Select(x => new MessageDTO() { 
-                SenderID = x.SenderID.Id,
-                ReceiverID = x.ReceiverID.Id,
+                SenderID = x.Sender.Id,
+                ReceiverID = x.Receiver.Id,
                 Content = x.Content,
                 IsRead = x.IsRead,
                 Order = x.Order
@@ -35,8 +35,8 @@ namespace TaskyMobileService.Controllers
         public SingleResult<MessageDTO> GetMessage(string id)
         {
             var result = Lookup(id).Queryable.Select(x => new MessageDTO() {
-                SenderID = x.SenderID.Id,
-                ReceiverID = x.ReceiverID.Id,
+                SenderID = x.Sender.Id,
+                ReceiverID = x.Receiver.Id,
                 Content = x.Content,
                 IsRead = x.IsRead,
                 Order = x.Order

@@ -5,10 +5,13 @@ namespace TaskyMobileService.DataObjects
 {
     public class Message : EntityData
     {
+        public string SenderID { get; set; }
+        public string ReceiverID { get; set; }
+
         [ForeignKey("SenderID")]
-        public virtual User SenderID { get; set; }
+        public virtual User Sender { get; set; }
         [ForeignKey("ReceiverID")]
-        public virtual User ReceiverID { get; set; }
+        public virtual User Receiver { get; set; }
 
         public string Content { get; set; }
         public bool IsRead { get; set; }
