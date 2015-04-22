@@ -24,7 +24,7 @@ namespace TaskyMobileService.Controllers
         {
             return Query().Select(x => new MessageDTO() { 
                 SenderID = x.Sender.Id,
-                //ReceiverID = x.Receiver.Id,
+                ReceiverID = x.Receiver.Id,
                 Content = x.Content,
                 IsRead = x.IsRead,
                 Order = x.Order
@@ -36,7 +36,7 @@ namespace TaskyMobileService.Controllers
         {
             var result = Lookup(id).Queryable.Select(x => new MessageDTO() {
                 SenderID = x.Sender.Id,
-                //ReceiverID = x.Receiver.Id,
+                ReceiverID = x.Receiver.Id,
                 Content = x.Content,
                 IsRead = x.IsRead,
                 Order = x.Order
