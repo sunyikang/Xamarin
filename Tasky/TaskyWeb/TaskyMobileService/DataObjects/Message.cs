@@ -8,6 +8,8 @@ namespace TaskyMobileService.DataObjects
         public string SenderID { get; set; }
         public string ReceiverID { get; set; }
 
+        //Shuran: Use of foreignkey and inverseproperty
+        //Reference: http://www.entityframeworktutorial.net/code-first/inverseproperty-dataannotations-attribute-in-code-first.aspx
         [ForeignKey("SenderID")]
         public virtual User Sender { get; set; }
         [ForeignKey("ReceiverID")]
